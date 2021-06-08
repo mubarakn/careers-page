@@ -2,6 +2,61 @@
     <head>
         <title>Careers</title>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <style>
+            .hero-bg {
+                background-image: url('./images/hero.png');
+                background-size: 100% 97%;
+                background-repeat: no-repeat;
+            }
+
+            .evp-bg {
+                background-image: url('./images/evp.png');
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .bg {
+                background-image: url('./images/bg.png');
+                background-size: 100% 100%;
+                background-repeat: no-repeat;
+            }
+
+            .evp-text {
+                color: #FFED92;
+            }
+            .evp-p {
+                color: #D3D3D6;
+            }
+
+            .box-yellow-bg {
+                background-color: #FFE645;
+            }
+
+            .box-text {
+                color: #404353;
+            }
+
+            .apply-form-bg {
+                background-color: #92C840;
+            }
+
+            .roles-bg {
+                background-color: #FF9700;
+            }
+
+            .pg-menu {
+                background-color: #FFFF48;
+            }
+            .pg-menu-active {
+                background-color: #363B54;
+            }
+            .footer-bg {
+                background-color: #0F283A;
+            }
+            .footer-hr {
+                background-color: #425562;
+            }
+        </style>
     </head>
 
     <body class="bg-blue-100">
@@ -43,24 +98,24 @@
 
         <div class="flex justify-center">
             <!--HERO SECTION-->
-            <div class="flex flex-col justify-center items-center w-4/5">
+            <div class="flex flex-col justify-center items-center w-full">
                 <!--PAGE MENU-->
-                <ul class="flex mt-2 font-semibold text-xs sticky top-1">
-                    <li class="shadow bg-blue-700 text-white rounded-tl-full rounded-bl-full">
+                <ul class="z-50 flex mt-2 font-semibold text-xs sticky top-1">
+                    <li class="shadow pg-menu-active text-white rounded-tl-full rounded-bl-full">
                         <a href="#" class="block px-4 py-2">Careers@22by7</a>
                     </li>
-                    <li class="shadow bg-yellow-300 text-blue-800">
+                    <li class="shadow pg-menu box-text">
                         <a href="#" class="block px-4 py-2">Employee Value Propsition</a>
                     </li>
-                    <li class="shadow bg-yellow-300 text-blue-800">
+                    <li class="shadow pg-menu box-text">
                         <a href="#" class="block px-4 py-2">Our Culture</a>
                     </li>
-                    <li class="shadow bg-yellow-300 text-blue-800 rounded-tr-full rounded-br-full">
+                    <li class="shadow pg-menu box-text rounded-tr-full rounded-br-full">
                         <a href="#" class="block px-4 py-2">Available Roles</a>
                     </li>
                 </ul>
                 <!--HERO CONTENT-->
-                <div class="flex w-full h-96">
+                <div class="hero-bg flex w-full h-96 -mt-10 z-10">
                     <div class="flex-1 flex flex-col">
                         <blockquote>
                             If you fail never give up because FAIL means
@@ -75,25 +130,29 @@
                     </div>
                 </div>
 
-                <div class="flex">
-                    <div class="flex-1 pr-4">
-                        <!--Employee Value Propsition-->
-                        <div>
-                            <h2>Employee Value Propsition</h2>
-                            <p>Our work environment is centered around our colours - saffron, white, and green. The colors of the tiranga, of freedom. We are commited to giving each and every member of our team:</p>
-                        </div>
+                <div class="flex evp-bg -mt-24 z-1">
+                    <!--Employee Value Propsition-->
+                    <div class="flex-1 pt-24 pr-4 pb-10">
+                        <h2 class="text-center text-2xl evp-text font-semibold">Employee Value Propsition</h2>
+                        <p class="evp-p px-24 py-4 text-center">Our work environment is centered around our colours - saffron, white, and green. The colors of the tiranga, of freedom. We are commited to giving each and every member of our team:</p>
+                    </div>
+                    <div class="w-3/12"></div>
 
+                </div>
+
+                <div class="flex bg">
+                    <div class="flex-1 px-10 z-50">
 
                         <!--Freedom to Explore-->
-                        <div>
-                            <div class="bg-yellow-500 h-10 w-full flex rounded-tl-xl rounded-tr-xl">
+                        <div class="box-text">
+                            <div class="z-50 -mt-10 box-yellow-bg h-10 w-full flex rounded-tl-xl rounded-tr-xl">
                                 <!--BOX ICON-->
-                                <div class="ml-6 rounded-full w-12 h-12 bg-yellow-500 -mt-1 pt-1 pl-1">
+                                <div class="ml-6 rounded-full w-12 h-12 box-yellow-bg -mt-1 pt-1 pl-1">
                                     <div class="bg-white w-10 h-10 rounded-full">
 
                                     </div>
                                 </div>
-                                <h5 class="ml-4 text-white font-semibold flex items-center">Freedom to Explore</h5>
+                                <h5 class="box-text ml-4 text-white text-xl font-bold flex items-center">Freedom to Explore</h5>
                             </div>
                             <div class="flex text-xs p-10 bg-white rounded-bl-xl rounded-br-xl">
                                 <!--VECTOR-->
@@ -113,15 +172,15 @@
 
 
                         <!--Freedom to Fail-->
-                        <div class="mt-10">
-                            <div class="bg-yellow-500 h-10 w-full flex flex-row-reverse rounded-tl-xl rounded-tr-xl">
+                        <div class="mt-10 box-text">
+                            <div class="box-yellow-bg h-10 w-full flex flex-row-reverse rounded-tl-xl rounded-tr-xl">
                                 <!--BOX ICON-->
-                                <div class="mr-6 rounded-full w-12 h-12 bg-yellow-500 -mt-1 pt-1 pl-1">
+                                <div class="mr-6 rounded-full w-12 h-12 box-yellow-bg -mt-1 pt-1 pl-1">
                                     <div class="bg-white w-10 h-10 rounded-full">
 
                                     </div>
                                 </div>
-                                <h5 class="mr-4 text-white font-semibold flex items-center">Freedom to Fail</h5>
+                                <h5 class="mr-4 text-white font-bold flex items-center box-text text-xl">Freedom to Fail</h5>
                             </div>
                             <div class="flex flex-row-reverse text-xs p-10 bg-white rounded-bl-xl rounded-br-xl">
                                 <!--VECTOR-->
@@ -149,15 +208,15 @@
                         </div>
 
                         <!--Freedom to Grow-->
-                        <div class="mt-10">
-                            <div class="bg-yellow-500 h-10 w-full flex rounded-tl-xl rounded-tr-xl">
+                        <div class="mt-10 box-text">
+                            <div class="box-yellow-bg h-10 w-full flex rounded-tl-xl rounded-tr-xl">
                                 <!--BOX ICON-->
-                                <div class="ml-6 rounded-full w-12 h-12 bg-yellow-500 -mt-1 pt-1 pl-1">
+                                <div class="ml-6 rounded-full w-12 h-12 box-yellow-bg -mt-1 pt-1 pl-1">
                                     <div class="bg-white w-10 h-10 rounded-full">
 
                                     </div>
                                 </div>
-                                <h5 class="ml-4 text-white font-semibold flex items-center">Freedom to Grow</h5>
+                                <h5 class="ml-4 text-white font-bold text-xl flex items-center box-text">Freedom to Grow</h5>
                             </div>
                             <div class="flex text-xs p-10 bg-white rounded-bl-xl rounded-br-xl">
                                 <!--VECTOR-->
@@ -221,15 +280,15 @@
                             <p class="text-xs mt-2">We are currently hiring for the following roles:</p>
 
                             <div class="w-3/4 mt-4">
-                                <a href="#" class="block pl-4 pr-2 py-1 bg-yellow-500 rounded-full text-white font-semibold flex items-center">
+                                <a href="#" class="block pl-4 pr-2 py-1 roles-bg rounded-full text-white font-semibold flex items-center">
                                     Business Manager - Cloud Security Solutions
                                     <div class="w-5 h-5 bg-white rounded-full ml-auto"></div>
                                 </a>
-                                <a href="#" class="mt-2 block pl-4 pr-2 py-1 bg-yellow-500 rounded-full text-white font-semibold flex items-center">
+                                <a href="#" class="mt-2 block pl-4 pr-2 py-1 roles-bg rounded-full text-white font-semibold flex items-center">
                                     Enterprise Sales Manager
                                     <div class="w-5 h-5 bg-white rounded-full ml-auto"></div>
                                 </a>
-                                <a href="#" class="mt-2 block pl-4 pr-2 py-1 bg-yellow-500 rounded-full text-white font-semibold flex items-center">
+                                <a href="#" class="mt-2 block pl-4 pr-2 py-1 roles-bg rounded-full text-white font-semibold flex items-center">
                                     Business Manager - ILM & VMW
                                     <div class="w-5 h-5 bg-white rounded-full ml-auto"></div>
                                 </a>
@@ -241,7 +300,7 @@
                     <!--SIDEBAR-->
                     <div class="w-3/12">
                         <!--Apply Now Form-->
-                        <div class="sticky top-0 bg-green-500 pt-10 py-6 px-6 rounded-2xl">
+                        <div class="sticky -mt-52 z-20 top-1 bottom-1 apply-form-bg pt-10 py-6 px-6 rounded-2xl">
                             <h4 class="text-lg font-semibold mb-1">Apply Now</h4>
                             <input type="text" placeholder="Name" class="block w-full mt-1" />
                             <input type="text" placeholder="Email" class="block w-full mt-1" />
@@ -269,7 +328,7 @@
         </div>
 
         <!--FOOTER-->
-        <div class="flex flex-col items-center bg-blue-700">
+        <div class="flex flex-col items-center footer-bg">
             <div class="w-4/5 flex space-x-4 mb-4 pt-20 pb-10 border-b border-blue-500">
 
                 <!--Corporate Headquarters-->
