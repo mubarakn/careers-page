@@ -101,20 +101,20 @@
                 <!--PAGE MENU-->
                 <ul class="z-50 flex mt-4 font-semibold text-xs sticky top-1">
                     <li class="shadow pg-menu-active text-white rounded-tl-full rounded-bl-full">
-                        <a href="#" class="block px-4 py-2">Careers@22by7</a>
+                        <a href="#" id="goto_careers" class="block px-4 py-2">Careers@22by7</a>
                     </li>
                     <li class="shadow pg-menu box-text">
-                        <a href="#" class="block px-4 py-2">Employee Value Propsition</a>
+                        <a href="#" id="goto_evp" class="block px-4 py-2">Employee Value Propsition</a>
                     </li>
                     <li class="shadow pg-menu box-text">
-                        <a href="#" class="block px-4 py-2">Our Culture</a>
+                        <a href="#" id="goto_culture" class="block px-4 py-2">Our Culture</a>
                     </li>
                     <li class="shadow pg-menu box-text rounded-tr-full rounded-br-full">
-                        <a href="#" class="block px-4 py-2">Available Roles</a>
+                        <a href="#" id="goto_roles" class="block px-4 py-2">Available Roles</a>
                     </li>
                 </ul>
                 <!--HERO CONTENT-->
-                <div class="hero-bg flex w-full h-96 z-10 -mt-20 pt-20">
+                <div id="careers" class="hero-bg flex w-full h-96 z-10 -mt-20 pt-20">
                     <div class="flex-1 flex flex-col">
                         <blockquote>
                             If you fail never give up because FAIL means
@@ -129,7 +129,7 @@
                     </div>
                 </div>
 
-                <div class="flex evp-bg -mt-24 z-1">
+                <div id="evp" class="flex evp-bg -mt-24 z-1">
                     <!--Employee Value Propsition-->
                     <div class="flex-1 pt-24 pr-4 pb-10">
                         <h2 class="text-center text-2xl evp-text font-semibold">Employee Value Propsition</h2>
@@ -143,7 +143,7 @@
                     <div class="flex-1 px-10 z-20">
 
                         <!--Freedom to Explore-->
-                        <div class="box-text">
+                        <div id="culture" class="box-text">
                             <div class="z-50 -mt-10 box-yellow-bg h-10 w-full flex rounded-tl-xl rounded-tr-xl">
                                 <!--BOX ICON-->
                                 <div class="ml-6 rounded-full w-12 h-12 box-yellow-bg -mt-1 pt-1 pl-1">
@@ -263,7 +263,7 @@
                         </div>
 
                         <!--Available Roles-->
-                        <div class="bg-purple-500 flex flex-col items-center rounded-3xl mt-36 mb-10" style="height: 400px;">
+                        <div id="roles" class="bg-purple-500 flex flex-col items-center rounded-3xl mt-36 mb-10" style="height: 400px;">
                             <div class="h-52 bg-red-200 -mt-24 w-10/12 rounded-3xl"></div>
                             <!--IMAGE BEADS-->
                             <div class="flex space-x-1 mt-4">
@@ -358,5 +358,38 @@
             </div>
         </div>
 
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script>
+            $(function() {
+                let $body = $('html, body')
+                $("#goto_careers").click(function(e) {
+                    e.preventDefault()
+                    $body.animate({
+                        scrollTop: $("body").offset().top
+                    }, 1000);
+                });
+
+                $("#goto_evp").click(function(e) {
+                    e.preventDefault()
+                    $body.animate({
+                        scrollTop: $("#evp").offset().top
+                    }, 1000);
+                });
+
+                $("#goto_culture").click(function(e) {
+                    e.preventDefault()
+                    $body.animate({
+                        scrollTop: $("#culture").offset().top
+                    }, 1000);
+                });
+
+                $("#goto_roles").click(function(e) {
+                    e.preventDefault()
+                    $body.animate({
+                        scrollTop: $("#roles").offset().top
+                    }, 1000);
+                });
+            })
+        </script>
     </body>
 </html>
