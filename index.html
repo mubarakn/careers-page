@@ -49,6 +49,21 @@
             }
             .pg-menu-active {
                 background-color: #363B54;
+                position: relative;
+                z-index: 1;
+            }
+            .pg-menu-active::after {
+                content: ' ';
+                width: 0; 
+                height: 0; 
+                border-left: 10px solid transparent;
+                border-right: 10px solid transparent;   
+                border-top: 10px solid #363B54;
+                display: block;
+                position: absolute;
+                bottom: -20%;
+                left: 50px;
+                z-index: -10;
             }
             .footer-bg {
                 background-color: #0F283A;
@@ -67,10 +82,12 @@
 
         <div class="flex flex-col items-center justify-center">
             <!--TOP MENU-->
-            <div class="flex w-full bg-white rounded-br-3xl rounded-bl-3xl shadow z-50">
+            <div class="flex w-full bg-white rounded-br-3xl rounded-bl-3xl shadow z-50 px-4 py-2">
                 <!--LOGO-->
                 <div>
-
+                    <a>
+                        <img src="images/logo.svg" width="100" height="50" />
+                    </a>
                 </div>
                 <!--MENU-->
                 <div class="flex-1 flex justify-center items-end">
@@ -96,7 +113,23 @@
                     </ul>
                 </div>
                 <!--SOCIAL ICONS-->
-                <div>
+                <div class="flex items-center w-1/4">
+
+                    <a href="#" class="w-5 h-5 p-1 rounded-full" style="background: #F47721;">
+                        <img src="images/insta_icon.svg" />
+                    </a>
+
+                    <a href="#" class="ml-2 w-5 h-5 p-1 rounded-full" style="background: #F47721;">
+                        <img src="images/facebook_icon.svg" />
+                    </a>
+
+                    <a href="#" class="ml-2 w-5 h-5 p-1 rounded-full" style="background: #F47721;">
+                        <img src="images/twitter_icon.svg" />
+                    </a>
+
+                    <a href="#" class="ml-2 w-5 h-5 p-1 rounded-full" style="background: #F47721;">
+                        <img src="images/linked_icon.svg" />
+                    </a>
 
                 </div>
             </div>
@@ -119,14 +152,16 @@
                 </ul>
                 <!--HERO CONTENT-->
                 <div id="careers" class="hero-bg flex w-full h-96 z-10 -mt-20 pt-20">
-                    <div class="flex-1 flex flex-col">
-                        <blockquote>
-                            If you fail never give up because FAIL means
-                            <span class="text-yellow-500">First Attempt In Learning</span>
-                        </blockquote>
-                        <span class="ml-auto">- Dr. APJ Abdul Kalam</span>
-
-                        <button class="bg-red-500 rounded text-white font-semibold">Come Fail with Us Until We Succeed</button>
+                    <div class="flex-1 flex flex-col items-center justify-center">
+                        <div>
+                            <blockquote>
+                                If you fail never give up because FAIL means
+                                <span class="text-yellow-500">First Attempt In Learning</span>
+                            </blockquote>
+                            <span class="ml-auto">- Dr. APJ Abdul Kalam</span>
+    
+                            <button class="block px-2 py-1 rounded text-white font-semibold shadow" style="background: #f62d00;">Come Fail with Us Until We Succeed</button>
+                        </div>
                     </div>
                     <div class="flex-1 flex justify-center items-center relative" style="z-index: 0;">
                         <img class="kalam" src="images/kalam.png" width="250" height="200" />
@@ -246,8 +281,8 @@
 
                         <!--Our Culture-->
                         <div class="rounded-xl p-10 flex flex-col items-center text-xs">
-                            <h5 class="text-xl">Our Culture</h5>
-                            <p>
+                            <h5 class="text-3xl font-semibold" style="color: #F62D00;">Our Culture</h5>
+                            <p class="text-center mt-1 p-1">
                                 The central focus for excellent workplaces is the quality of working relationships between
                                 people who work in them. There are many important dimensions to building excellent
 
@@ -257,7 +292,7 @@
 
                                 play together, and most importantly - support each other to grow together.
                             </p>
-                            <b>#TougherTogether</b>
+                            <b style="color: #ECE4B7;">#TougherTogether</b>
 
                             <p class="mt-2">
                                 Our aim to build a value-based organizational culture led to the inception of 22by7 Academy - a
@@ -269,8 +304,15 @@
                                     <img src="images/start_blockquote.svg" width="20" height="10" />
                                     <div class="flex-1 ml-1" style="background: #f28e01;height: 1px;"></div>
                                 </div>
-                                <div class="flex">
-                                    <img src="images/venkat.png" />
+                                <div class="flex items-center p-1">
+                                    <div class="rounded-full bg-white p-1">
+                                        <img src="images/venkat.png" width="75" height="75" />
+                                    </div>
+
+                                    <blockquote class="ml-4 flex flex-col text-sm" style="color: #f28e01;">
+                                        <span class="italic text-justify">“Technology, market, and solutions are incidental... It is PEOPLE who drive the success and the scalability of an organization”.</span>
+                                        <span class="ml-auto non-italic font-semibold">- Venkat Murthy, Prime Mover</span>
+                                    </blockquote>
                                 </div>
                                 <div class="flex items-center">
                                     <div class="flex-1 mr-1" style="background: #f28e01;height: 1px;"></div>
@@ -286,7 +328,22 @@
                         </div>
 
                         <div class="flex justify-center mx-20">
-                            <a href="#" class="font-semibold border border-red-500 text-red-500 p-2 font-semibold rounded-full text-sm">Click here for a sneak peek into everyday life @ 22by7 Solutions</a>
+                            <a href="#" class="flex font-semibold p-2 font-semibold rounded-full text-sm bg-white" style="border: 1px solid #F62D00; color: #F62D00;">
+                                <div>Click here for a sneak peek into everyday life @ 22by7 Solutions</div>
+
+                                <div class="ml-2 w-6 h-6 rounded-full flex justify-center p-1" style="background: #F62D00;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.72 13.2">
+                                        <defs><style>.cls-1{fill:#ffffffff;}</style></defs>
+                                        <g id="Layer_2" data-name="Layer 2">
+                                            <g id="Layer_1-2" data-name="Layer 1">
+                                                <path class="cls-1" d="M10.11,13.2a6.58,6.58,0,0,1-4.67-1.93l.86-.86a5.4,5.4,0,1,0,0-7.62l-.86-.86A6.72,6.72,0,0,1,8.35.23a6.64,6.64,0,0,1,6.43,1.7A6.6,6.6,0,0,1,10.11,13.2Z"/>
+                                                <rect class="cls-1" y="5.96" width="10.11" height="1.28"/>
+                                                <polygon class="cls-1" points="10.11 6.6 8.9 3.2 11.29 4.9 13.67 6.6 11.29 8.3 8.9 10 10.11 6.6"/>
+                                            </g>
+                                        </g>
+                                    </svg>
+                                </div>
+                            </a>
                         </div>
 
                         <!--Available Roles-->
