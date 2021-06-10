@@ -11,7 +11,7 @@
 
             .evp-bg {
                 background-image: url('./images/evp.png');
-                background-size: cover;
+                background-size: 100% 100%;
                 background-repeat: no-repeat;
             }
 
@@ -72,7 +72,9 @@
                 background-color: #425562;
             }
             .kalam {
-                margin-top: -30px;
+                position: relative;
+                margin-top: -20px;
+                z-index: -100000;
             }
 
         </style>
@@ -151,8 +153,8 @@
                     </li>
                 </ul>
                 <!--HERO CONTENT-->
-                <div id="careers" class="hero-bg flex w-full h-96 z-10 -mt-20 pt-20">
-                    <div class="flex-1 flex flex-col items-center justify-center">
+                <div id="careers" class="hero-bg flex w-full h-96 -mt-20 pt-20">
+                    <div class="w-8/12 flex flex-col items-center justify-center">
                         <div>
                             <blockquote>
                                 If you fail never give up because FAIL means
@@ -163,18 +165,18 @@
                             <button class="block px-2 py-1 rounded text-white font-semibold shadow" style="background: #f62d00;">Come Fail with Us Until We Succeed</button>
                         </div>
                     </div>
-                    <div class="flex-1 flex justify-center items-center relative" style="z-index: 0;">
-                        <img class="kalam" src="images/kalam.png" width="250" height="200" />
+                    <div class="w-1/5 flex justify-center items-center relative">
+                        <img class="kalam" src="images/kalam.png" width="250" height="200" style="z-index: 0;" />
                     </div>
                 </div>
 
-                <div id="evp" class="flex evp-bg -mt-24 z-2">
+                <div id="evp" class="flex justify-center evp-bg -mt-40 z-10">
                     <!--Employee Value Propsition-->
-                    <div class="flex-1 pt-24 pr-4 pb-10">
-                        <h2 class="text-center text-2xl evp-text font-semibold">Employee Value Propsition</h2>
+                    <div class="w-8/12 pr-4 pb-12">
+                        <h2 class="mt-40 text-center text-2xl evp-text font-semibold">Employee Value Propsition</h2>
                         <p class="evp-p px-24 py-4 text-center">Our work environment is centered around our colours - saffron, white, and green. The colors of the tiranga, of freedom. We are commited to giving each and every member of our team:</p>
                     </div>
-                    <div class="w-3/12"></div>
+                    <div class="w-1/5"></div>
 
                 </div>
 
@@ -402,7 +404,7 @@
                     </div>
 
                     <!--SIDEBAR-->
-                    <div class="w-2.5/12">
+                    <div class="w-1/5">
                         <!--Apply Now Form-->
                         <div class="sticky -mt-52 z-20 top-10 bottom-1 apply-form-bg pt-10 py-6 px-6 rounded-2xl mr-4">
                             <h4 class="text-lg font-semibold mb-1">Apply Now</h4>
