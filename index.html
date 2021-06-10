@@ -2,11 +2,17 @@
     <head>
         <title>Careers</title>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
         <style>
             .hero-bg {
                 background-image: url('./images/hero.png');
                 background-size: 100% 97%;
                 background-repeat: no-repeat;
+            }
+
+            blockquote.hero {
+                font-family: 'Pacifico', cursive;
             }
 
             .evp-bg {
@@ -19,6 +25,16 @@
                 background-image: url('./images/bg.png');
                 background-size: 100% 100%;
                 background-repeat: no-repeat;
+            }
+
+            .culture {
+                background-image: url('./images/culture.png');
+                background-size: cover;
+            }
+
+            .roles {
+                background-image: url('./images/roles.png');
+                background-size: cover;
             }
 
             .evp-text {
@@ -73,8 +89,8 @@
             }
             .kalam {
                 position: relative;
-                margin-top: -20px;
-                z-index: -100000;
+                margin-top: 100px;
+                margin-left: -250px;
             }
 
         </style>
@@ -117,20 +133,20 @@
                 <!--SOCIAL ICONS-->
                 <div class="flex items-center justify-end">
 
-                    <a href="#" class="w-5 h-5 p-1 rounded-full" style="background: #F47721;">
-                        <img src="images/insta_icon.svg" />
+                    <a href="#" class="w-5 h-5">
+                        <img src="images/in.png" />
                     </a>
 
-                    <a href="#" class="ml-2 w-5 h-5 p-1 rounded-full" style="background: #F47721;">
-                        <img src="images/facebook_icon.svg" />
+                    <a href="#" class="ml-2 w-5 h-5">
+                        <img src="images/fb.png" />
                     </a>
 
-                    <a href="#" class="ml-2 w-5 h-5 p-1 rounded-full" style="background: #F47721;">
-                        <img src="images/twitter_icon.svg" />
+                    <a href="#" class="ml-2 w-5 h-5">
+                        <img src="images/twitter.png" />
                     </a>
 
-                    <a href="#" class="ml-2 w-5 h-5 p-1 rounded-full" style="background: #F47721;">
-                        <img src="images/linked_icon.svg" />
+                    <a href="#" class="ml-2 w-5 h-5">
+                        <img src="images/ln.png" />
                     </a>
 
                 </div>
@@ -153,24 +169,24 @@
                     </li>
                 </ul>
                 <!--HERO CONTENT-->
-                <div id="careers" class="hero-bg flex w-full h-96 -mt-20 pt-20">
+                <div id="careers" class="hero-bg flex w-full -mt-20 pt-20" style="height: 34rem;">
                     <div class="w-8/12 flex flex-col items-center justify-center">
-                        <div>
-                            <blockquote>
-                                If you fail never give up because FAIL means
-                                <span class="text-yellow-500">First Attempt In Learning</span>
+                        <div class="w-1/2 flex flex-col">
+                            <blockquote class="hero text-white text-4xl leading-relaxed">
+                                &#8220;If you fail never give up because FAIL means
+                                <span class="block" style="color: #FFFF48;">First Attempt In Learning &#8221;</span>
                             </blockquote>
-                            <span class="ml-auto">- Dr. APJ Abdul Kalam</span>
+                            <span class="ml-auto text-white text-sm font-semibold">- Dr. APJ Abdul Kalam</span>
     
-                            <button class="block px-2 py-1 rounded text-white font-semibold shadow" style="background: #f62d00;">Come Fail with Us Until We Succeed</button>
+                            <button class="block mt-4 px-2 py-1 rounded-lg text-white font-semibold shadow" style="background: #f62d00;">Come Fail with Us Until We Succeed</button>
                         </div>
                     </div>
-                    <div class="w-1/5 flex justify-center items-center relative">
-                        <img class="kalam" src="images/kalam.png" width="250" height="200" style="z-index: 0;" />
+                    <div class="flex-1 flex justify-center items-center relative">
+                        <img class="kalam" src="images/kalam.png" width="350" height="100" />
                     </div>
                 </div>
 
-                <div id="evp" class="flex justify-center evp-bg -mt-40 z-10">
+                <div id="evp" class="flex justify-center evp-bg -mt-44 z-10">
                     <!--Employee Value Propsition-->
                     <div class="w-8/12 pr-4 pb-12">
                         <h2 class="mt-40 text-center text-2xl evp-text font-semibold">Employee Value Propsition</h2>
@@ -282,9 +298,9 @@
                         </div>
 
                         <!--Our Culture-->
-                        <div class="rounded-xl p-10 flex flex-col items-center text-xs">
+                        <div class="culture rounded-xl mt-10 p-10 flex flex-col items-center justify-center text-xs">
                             <h5 class="text-3xl font-semibold" style="color: #F62D00;">Our Culture</h5>
-                            <p class="text-center mt-1 p-1">
+                            <p class="text-justify text-white mt-1 px-20 py-4">
                                 The central focus for excellent workplaces is the quality of working relationships between
                                 people who work in them. There are many important dimensions to building excellent
 
@@ -296,12 +312,12 @@
                             </p>
                             <b style="color: #ECE4B7;">#TougherTogether</b>
 
-                            <p class="mt-2">
+                            <p class="mt-2 px-20 py-4 text-white text-justify">
                                 Our aim to build a value-based organizational culture led to the inception of 22by7 Academy - a
                                 people development platform that focuses on the holistic development of our professionals.
                             </p>
 
-                            <div class="my-10">
+                            <div class="my-10 mx-20">
                                 <div class="flex items-center">
                                     <img src="images/start_blockquote.svg" width="20" height="10" />
                                     <div class="flex-1 ml-1" style="background: #f28e01;height: 1px;"></div>
@@ -322,37 +338,28 @@
                                 </div>
                             </div>
 
-                            <p class="mt-2">
+                            <p class="mt-2 px-20 text-white">
                                 Gurukul, an arm of 22by7 Academy, is a platform that facilitates the training, upskilling, and certifying
                                 of our professionals in an effort to realize their true potential in driving world-class customer success.
                             </p>
 
                         </div>
 
-                        <div class="flex justify-center mx-20">
+                        <div class="flex justify-center mx-20 mt-10">
                             <a href="#" class="flex font-semibold p-2 font-semibold rounded-full text-sm bg-white" style="border: 1px solid #F62D00; color: #F62D00;">
                                 <div>Click here for a sneak peek into everyday life @ 22by7 Solutions</div>
 
-                                <div class="ml-2 w-6 h-6 rounded-full flex justify-center p-1" style="background: #F62D00;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.72 13.2">
-                                        <defs><style>.cls-1{fill:#ffffffff;}</style></defs>
-                                        <g id="Layer_2" data-name="Layer 2">
-                                            <g id="Layer_1-2" data-name="Layer 1">
-                                                <path class="cls-1" d="M10.11,13.2a6.58,6.58,0,0,1-4.67-1.93l.86-.86a5.4,5.4,0,1,0,0-7.62l-.86-.86A6.72,6.72,0,0,1,8.35.23a6.64,6.64,0,0,1,6.43,1.7A6.6,6.6,0,0,1,10.11,13.2Z"/>
-                                                <rect class="cls-1" y="5.96" width="10.11" height="1.28"/>
-                                                <polygon class="cls-1" points="10.11 6.6 8.9 3.2 11.29 4.9 13.67 6.6 11.29 8.3 8.9 10 10.11 6.6"/>
-                                            </g>
-                                        </g>
-                                    </svg>
-                                </div>
+                                <img src="images/cta.png" class="ml-2 w-6 h-6 rounded-full" />
                             </a>
                         </div>
 
                         <!--Available Roles-->
-                        <div id="roles" class="bg-purple-500 flex flex-col items-center rounded-3xl mt-36 mb-10" style="height: 400px;">
-                            <div class="h-52 bg-red-200 -mt-24 w-10/12 rounded-3xl"></div>
+                        <div id="roles" class="roles flex flex-col items-center rounded-3xl mt-36 mb-10" style="height: 400px;">
+                            <div class="h-52 -mt-24 w-10/12 rounded-3xl">
+                                <img src="images/roles2.png" />
+                            </div>
                             <!--IMAGE BEADS-->
-                            <div class="flex space-x-1 mt-4">
+                            <div class="flex space-x-1 mt-14">
                                 <div class="w-2 h-2 cursor-pointer rounded-full bg-red-500"></div>
                                 <div class="w-2 h-2 cursor-pointer rounded-full border border-red-500"></div>
                                 <div class="w-2 h-2 cursor-pointer rounded-full border border-red-500"></div>
@@ -362,7 +369,7 @@
 
                             <!--Available Roles content-->
                             <h5 class="mt-5 text-xl font-semibold text-yellow-200">Available Roles</h5>
-                            <p class="text-xs mt-2">We are currently hiring for the following roles:</p>
+                            <p class="text-xs text-white mt-2">We are currently hiring for the following roles:</p>
 
                             <div class="w-3/4 mt-4">
                                 <a href="#" class="block pl-4 pr-2 py-1 roles-bg rounded-full text-white font-semibold flex items-center">
