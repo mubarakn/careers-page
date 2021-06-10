@@ -155,16 +155,16 @@
             <div class="flex flex-col justify-center items-center w-full">
                 <!--PAGE MENU-->
                 <ul class="z-50 flex mt-4 font-semibold text-xs sticky top-1">
-                    <li class="shadow pg-menu-active text-white rounded-tl-full rounded-bl-full">
+                    <li class="menu_item shadow pg-menu pg-menu-active text-white rounded-tl-full rounded-bl-full">
                         <a href="#" id="goto_careers" class="block px-4 py-2">Careers@22by7</a>
                     </li>
-                    <li class="shadow pg-menu box-text">
+                    <li class="menu_item shadow pg-menu box-text">
                         <a href="#" id="goto_evp" class="block px-4 py-2">Employee Value Propsition</a>
                     </li>
-                    <li class="shadow pg-menu box-text">
+                    <li class="menu_item shadow pg-menu box-text">
                         <a href="#" id="goto_culture" class="block px-4 py-2">Our Culture</a>
                     </li>
-                    <li class="shadow pg-menu box-text rounded-tr-full rounded-br-full">
+                    <li class="menu_item shadow pg-menu box-text rounded-tr-full rounded-br-full">
                         <a href="#" id="goto_roles" class="block px-4 py-2">Available Roles</a>
                     </li>
                 </ul>
@@ -200,7 +200,7 @@
                     <div class="w-8/12 px-10 z-20">
 
                         <!--Freedom to Explore-->
-                        <div id="culture" class="box-text">
+                        <div class="box-text">
                             <div class="z-50 -mt-10 box-yellow-bg h-10 w-full flex rounded-tl-xl rounded-tr-xl">
                                 <!--BOX ICON-->
                                 <div class="ml-6 rounded-full w-12 h-12 box-yellow-bg -mt-1 pt-1 pl-1">
@@ -298,7 +298,7 @@
                         </div>
 
                         <!--Our Culture-->
-                        <div class="culture rounded-xl mt-10 p-10 flex flex-col items-center justify-center text-xs">
+                        <div id="culture" class="culture rounded-xl mt-10 p-10 flex flex-col items-center justify-center text-xs">
                             <h5 class="text-3xl font-semibold" style="color: #F62D00;">Our Culture</h5>
                             <p class="text-justify text-white mt-1 px-20 py-4">
                                 The central focus for excellent workplaces is the quality of working relationships between
@@ -509,6 +509,7 @@
         </div>
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js" integrity="sha512-JZSo0h5TONFYmyLMqp8k4oPhuo6yNk9mHM+FY50aBjpypfofqtEWsAgRDQm94ImLCzSaHeqNvYuD9382CEn2zw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script>
             $(function() {
                 let $body = $('html, body')
@@ -539,6 +540,41 @@
                         scrollTop: $("#roles").offset().top
                     }, 1000);
                 });
+
+                $(window).scroll($.debounce(250, function() {
+                    const windowTop = $(window).scrollTop()
+                    const evpTop = $('#evp').offset().top
+                    const evpDiff = evpTop - windowTop
+
+                    if (windowTop === 0) {
+                        makeActive(0)
+                        return
+                    }
+
+                    if (evpDiff >= 0) {
+                        makeActive(1)
+                        return
+                    }
+
+                    const cultureTop = $('#culture').offset().top
+                    const cultureDiff = cultureTop - windowTop
+                    if (cultureDiff >= 0) {
+                        makeActive(2)
+                        return
+                    }
+
+                    const rolesTop = $('#roles').offset().top
+                    const rolesDiff = rolesTop - windowTop
+                    if (rolesDiff >= 0) {
+                        makeActive(3)
+                        return
+                    }
+                }))
+
+                function makeActive(index) {
+                    $('.menu_item').removeClass('pg-menu-active text-white').addClass('box-text')
+                    $('.menu_item').eq(index).removeClass('box-text').addClass('pg-menu-active text-white')
+                }
             })
         </script>
     </body>
