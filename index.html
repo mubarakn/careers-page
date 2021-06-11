@@ -173,12 +173,13 @@
                     <div class="w-8/12 flex flex-col items-center justify-center">
                         <div class="w-1/2 flex flex-col">
                             <blockquote class="hero text-white text-4xl md:text-xl leading-relaxed">
-                                &#8220;If you fail never give up because FAIL means
+                                <span class="block">&#8220;If you fail, never give up</span>
+                                <span class="block">because FAIL means</span>
                                 <span class="block" style="color: #FFFF48;">First Attempt In Learning &#8221;</span>
                             </blockquote>
                             <span class="ml-auto text-white text-sm font-semibold">- Dr. APJ Abdul Kalam</span>
     
-                            <button class="block mt-4 px-2 py-1 rounded-lg text-white font-semibold shadow" style="background: #f62d00;">Come Fail with Us Until We Succeed</button>
+                            <button id="cta" onclick="javascript::alert('helloworld')" class="block mt-4 px-2 py-1 rounded-lg text-white text-lg font-semibold shadow" style="background: #f62d00;">Come Fail with Us Until We Succeed</button>
                         </div>
                     </div>
                     <div class="flex-1 flex justify-center items-center relative">
@@ -186,11 +187,11 @@
                     </div>
                 </div>
 
-                <div id="evp" class="flex justify-center evp-bg -mt-44 md:-mt-52 z-10">
+                <div id="evp" class="flex justify-center evp-bg -mt-44 md:-mt-52 z-10 pointer-events-none">
                     <!--Employee Value Propsition-->
-                    <div class="w-8/12 pt-10 pr-4 pb-12">
-                        <h2 class="mt-40 text-center text-2xl evp-text font-semibold">Employee Value Propsition</h2>
-                        <p class="evp-p px-24 py-4 text-center">Our work environment is centered around our colours - saffron, white, and green. The colors of the tiranga, of freedom. We are commited to giving each and every member of our team:</p>
+                    <div class="w-8/12 pt-10 pr-4 pb-12 pointer-events-none">
+                        <h2 class="mt-40 text-center text-3xl evp-text font-semibold">Employee Value Propsition</h2>
+                        <p class="evp-p px-24 py-4 text-center text-xl">Our work environment is centered around our colours - saffron, white, and green. The colors of the tiranga, of freedom. We are commited to giving each and every member of our team:</p>
                     </div>
                     <div class="w-1/5"></div>
 
@@ -210,14 +211,14 @@
                                 </div>
                                 <h5 class="box-text ml-4 text-white text-xl font-bold flex items-center">Freedom to Explore</h5>
                             </div>
-                            <div class="flex text-xs p-10 bg-white rounded-bl-xl rounded-br-xl">
+                            <div class="flex text-xs p-5 bg-white rounded-bl-xl rounded-br-xl">
                                 <!--VECTOR-->
                                 <div class="w-4/12 flex items-center justify-center">
                                     <img class="w-40" src="images/laptop_guy.svg" />
                                 </div>
-                                <div class="mr-10" style="width: 2px;background-color: #FFE645;">&nbsp;</div>
+                                <div class="mr-5" style="width: 2px;background-color: #FFE645;">&nbsp;</div>
                                 <!--CONTENT-->
-                                <div class="flex-1 px-5 text-justify">
+                                <div class="flex-1 px-5 text-justify text-base">
                                     We strongly believe that interest is a prerequisite to excellence -
                                     You must love what you do to be truly great at it. That’s why we
                                     give every single team member the freedom to explore as much
@@ -241,14 +242,14 @@
                                 </div>
                                 <h5 class="mr-4 text-white font-bold flex items-center box-text text-xl">Freedom to Fail</h5>
                             </div>
-                            <div class="flex flex-row-reverse text-xs p-10 bg-white rounded-bl-xl rounded-br-xl">
+                            <div class="flex flex-row-reverse text-xs p-5 bg-white rounded-bl-xl rounded-br-xl">
                                 <!--VECTOR-->
-                                <div class="w-4/12 flex items-center justify-center p-10">
+                                <div class="w-4/12 flex items-center justify-center p-2">
                                     <img src="images/bow_girl.svg" />
                                 </div>
-                                <div class="mr-10" style="width: 2px;background-color: #FFE645;">&nbsp;</div>
+                                <div class="mr-2" style="width: 2px;background-color: #FFE645;">&nbsp;</div>
                                 <!--CONTENT-->
-                                <div class="flex-1 mr-20 text-justify">
+                                <div class="flex-1 mr-10 text-justify text-sm">
                                     We believe that failure is a better teacher than success. Although
                                     almost every organization urges its employees to strive for success,
                                     we believe in giving our employees the freedom to try something
@@ -280,14 +281,14 @@
                                 </div>
                                 <h5 class="ml-4 text-white font-bold text-xl flex items-center box-text">Freedom to Grow</h5>
                             </div>
-                            <div class="flex text-xs p-10 bg-white rounded-bl-xl rounded-br-xl">
+                            <div class="flex text-xs p-5 bg-white rounded-bl-xl rounded-br-xl">
                                 <!--VECTOR-->
                                 <div class="w-4/12 flex items-center justify-center">
                                     <img class="w-40" src="images/rocket_guy.svg" />
                                 </div>
                                 <div class="mr-10" style="width: 2px;background-color: #FFE645;">&nbsp;</div>
                                 <!--CONTENT-->
-                                <div class="flex-1 ml-10 text-justify">
+                                <div class="flex-1 ml-10 text-justify text-base">
                                     Every single role in our organization features multiple growth
                                     trajectories. We believe that a company’s growth is compounded by
                                     the growth of its team. At 22by7 Solutions, you have the freedom to
@@ -298,7 +299,7 @@
                         </div>
 
                         <!--Our Culture-->
-                        <div id="culture" class="culture rounded-xl mt-10 p-10 flex flex-col items-center justify-center text-xs">
+                        <div id="culture" class="culture rounded-xl mt-10 p-10 flex flex-col items-center justify-center text-md">
                             <h5 class="text-3xl font-semibold" style="color: #F62D00;">Our Culture</h5>
                             <p class="text-justify text-white mt-1 px-20 py-4">
                                 The central focus for excellent workplaces is the quality of working relationships between
@@ -324,10 +325,10 @@
                                 </div>
                                 <div class="flex items-center p-1">
                                     <div class="rounded-full bg-white p-1">
-                                        <img src="images/venkat.png" width="75" height="75" />
+                                        <img src="images/venkat.png" width="150" height="150" />
                                     </div>
 
-                                    <blockquote class="ml-4 flex flex-col text-sm" style="color: #f28e01;">
+                                    <blockquote class="ml-4 flex flex-col text-md" style="color: #f28e01;">
                                         <span class="italic text-justify">“Technology, market, and solutions are incidental... It is PEOPLE who drive the success and the scalability of an organization”.</span>
                                         <span class="ml-auto non-italic font-semibold">- Venkat Murthy, Prime Mover</span>
                                     </blockquote>
@@ -429,11 +430,20 @@
                             </div>
                             <div class="relative">
                                 <img class="absolute top-1 left-2 pointer-events-none" width="16" height="16" src="images/designation.png" />
-                                <select class="block w-full mt-1 px-2 py-1 pl-6 text-gray-400">
-                                    <option value="">Designation</option>
+                                <select
+                                    id="hear"
+                                    class="block w-full mt-1 px-2 py-1 pl-6 text-gray-400 text-sm"
+                                    >
+                                    <option value="">How did you hear about us?</option>
+                                    <option value="Friend">Friend</option>
+                                    <option value="LinkedIn">LinkedIn</option>
+                                    <option value="Naukri">Naukri</option>
+                                    <option value="Newspaper Ad">Newspaper Ad</option>
+                                    <option value="Other">Other</option>
                                 </select>
-                                <img src="images/dropdown.png" width="30" height="100%" class="absolute top-0 right-0 pointer-events-none bg-white" />
+                                <img src="images/dropdown.png" width="30" class="h-full absolute top-0 right-0 pointer-events-none bg-white" />
                             </div>
+                            <input id="apply_other" type="text" class="block w-full mt-1 px-2 py-1 hidden" placeholder="Please specify." />
 
                             <div class="mt-2">
                                 <span class="text-xs block pb-1">Upload Resume</span>
@@ -540,6 +550,24 @@
                         scrollTop: $("#roles").offset().top
                     }, 1000);
                 });
+
+                $('#cta').click(function(e) {
+                    e.preventDefault()
+                    console.log('clicking...')
+                    $body.animate({
+                        scrollTop: $("#roles").offset().top
+                    }, 1000);
+                })
+
+                $('#hear').on('change', function(e) {
+                    console.log($(this).val() === 'Other', $('#apply_other'))
+                    if ($(this).val() === 'Other') {
+                        $('#apply_other').removeClass('hidden').addClass('block')
+                    }
+                    else {
+                        $('#apply_other').removeClass('block').addClass('hidden').val('')
+                    }
+                })
 
                 $(window).scroll($.debounce(250, function() {
                     const windowTop = $(window).scrollTop()
