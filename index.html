@@ -366,52 +366,68 @@
                                 </div>
                             </div>
                             <!--IMAGE BEADS-->
-                            <div class="flex space-x-1 mt-14">
+                            <!-- <div class="flex space-x-1 mt-14">
                                 <div class="w-2 h-2 cursor-pointer rounded-full bg-red-500"></div>
                                 <div class="w-2 h-2 cursor-pointer rounded-full border border-red-500"></div>
                                 <div class="w-2 h-2 cursor-pointer rounded-full border border-red-500"></div>
                                 <div class="w-2 h-2 cursor-pointer rounded-full border border-red-500"></div>
                                 <div class="w-2 h-2 cursor-pointer rounded-full border border-red-500"></div>
-                            </div>
+                            </div> -->
 
                             <!--Available Roles content-->
                             <h5 class="mt-5 text-xl font-semibold text-yellow-200">Available Roles</h5>
                             <p class="text-xs text-white mt-2">We are currently hiring for the following roles:</p>
 
                             <div class="w-3/4 mt-4">
-                                <a href="#" class="block pl-4 pr-2 py-1 roles-bg rounded-full text-white font-semibold flex items-center">
-                                    Business Manager - Cloud Security Solutions
-                                    <div class="w-6 h-6 bg-white rounded-full ml-auto flex justify-center p-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.92 14.94">
-                                            <defs><style>.cls-1{fill:#fa0;}</style></defs>
-                                            <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
-                                                <path class="cls-1" d="M11.45,14.94a7.44,7.44,0,0,1-5.29-2.18l1-1A6.11,6.11,0,0,0,17.55,7.47a6,6,0,0,0-1.79-4.31,6.09,6.09,0,0,0-8.63,0l-1-1a7.47,7.47,0,0,1,10.57,0,7.47,7.47,0,0,1,0,10.57A7.42,7.42,0,0,1,11.45,14.94Z"/><rect class="cls-1" y="6.74" width="11.45" height="1.45"/><polygon class="cls-1" points="11.45 7.47 10.07 3.63 12.78 5.55 15.48 7.47 12.78 9.39 10.07 11.32 11.45 7.47"/></g>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </a>
-                                <a href="#" class="mt-2 block pl-4 pr-2 py-1 roles-bg rounded-full text-white font-semibold flex items-center">
-                                    Enterprise Sales Manager
-                                    <div class="w-6 h-6 bg-white rounded-full ml-auto flex justify-center p-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.92 14.94">
-                                            <defs><style>.cls-1{fill:#fa0;}</style></defs>
-                                            <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
-                                                <path class="cls-1" d="M11.45,14.94a7.44,7.44,0,0,1-5.29-2.18l1-1A6.11,6.11,0,0,0,17.55,7.47a6,6,0,0,0-1.79-4.31,6.09,6.09,0,0,0-8.63,0l-1-1a7.47,7.47,0,0,1,10.57,0,7.47,7.47,0,0,1,0,10.57A7.42,7.42,0,0,1,11.45,14.94Z"/><rect class="cls-1" y="6.74" width="11.45" height="1.45"/><polygon class="cls-1" points="11.45 7.47 10.07 3.63 12.78 5.55 15.48 7.47 12.78 9.39 10.07 11.32 11.45 7.47"/></g>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </a>
-                                <a href="#" class="mt-2 block pl-4 pr-2 py-1 roles-bg rounded-full text-white font-semibold flex items-center">
-                                    Business Manager - ILM & VMW
-                                    <div class="w-6 h-6 bg-white rounded-full ml-auto flex justify-center p-1">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.92 14.94">
-                                            <defs><style>.cls-1{fill:#fa0;}</style></defs>
-                                            <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
-                                                <path class="cls-1" d="M11.45,14.94a7.44,7.44,0,0,1-5.29-2.18l1-1A6.11,6.11,0,0,0,17.55,7.47a6,6,0,0,0-1.79-4.31,6.09,6.09,0,0,0-8.63,0l-1-1a7.47,7.47,0,0,1,10.57,0,7.47,7.47,0,0,1,0,10.57A7.42,7.42,0,0,1,11.45,14.94Z"/><rect class="cls-1" y="6.74" width="11.45" height="1.45"/><polygon class="cls-1" points="11.45 7.47 10.07 3.63 12.78 5.55 15.48 7.47 12.78 9.39 10.07 11.32 11.45 7.47"/></g>
-                                            </g>
-                                        </svg>
-                                    </div>
-                                </a>
+
+                                <dl class="accordion">
+
+                                    <dt>
+                                        <a href="#" class="block pl-4 pr-2 py-1 roles-bg rounded-full text-white font-semibold flex items-center">
+                                            Business Manager - Cloud Security Solutions
+                                            <div class="w-6 h-6 bg-white rounded-full ml-auto flex justify-center p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.92 14.94">
+                                                    <defs><style>.cls-1{fill:#fa0;}</style></defs>
+                                                    <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+                                                        <path class="cls-1" d="M11.45,14.94a7.44,7.44,0,0,1-5.29-2.18l1-1A6.11,6.11,0,0,0,17.55,7.47a6,6,0,0,0-1.79-4.31,6.09,6.09,0,0,0-8.63,0l-1-1a7.47,7.47,0,0,1,10.57,0,7.47,7.47,0,0,1,0,10.57A7.42,7.42,0,0,1,11.45,14.94Z"/><rect class="cls-1" y="6.74" width="11.45" height="1.45"/><polygon class="cls-1" points="11.45 7.47 10.07 3.63 12.78 5.55 15.48 7.47 12.78 9.39 10.07 11.32 11.45 7.47"/></g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </dt>
+                                    <dd class="p-1 text-white">Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut, elementum vulputate, nunc.</dd>
+                                    
+                                    <dt>
+                                        <a href="#" class="mt-2 block pl-4 pr-2 py-1 roles-bg rounded-full text-white font-semibold flex items-center">
+                                            Enterprise Sales Manager
+                                            <div class="w-6 h-6 bg-white rounded-full ml-auto flex justify-center p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.92 14.94">
+                                                    <defs><style>.cls-1{fill:#fa0;}</style></defs>
+                                                    <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+                                                        <path class="cls-1" d="M11.45,14.94a7.44,7.44,0,0,1-5.29-2.18l1-1A6.11,6.11,0,0,0,17.55,7.47a6,6,0,0,0-1.79-4.31,6.09,6.09,0,0,0-8.63,0l-1-1a7.47,7.47,0,0,1,10.57,0,7.47,7.47,0,0,1,0,10.57A7.42,7.42,0,0,1,11.45,14.94Z"/><rect class="cls-1" y="6.74" width="11.45" height="1.45"/><polygon class="cls-1" points="11.45 7.47 10.07 3.63 12.78 5.55 15.48 7.47 12.78 9.39 10.07 11.32 11.45 7.47"/></g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </dt>
+                                    <dd class="p-1 text-white">Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci. Aenean dignissim pellentesque felis.</dd>
+                                    
+                                    <dt>
+                                        <a href="#" class="mt-2 block pl-4 pr-2 py-1 roles-bg rounded-full text-white font-semibold flex items-center">
+                                            Business Manager - ILM & VMW
+                                            <div class="w-6 h-6 bg-white rounded-full ml-auto flex justify-center p-1">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 18.92 14.94">
+                                                    <defs><style>.cls-1{fill:#fa0;}</style></defs>
+                                                    <g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1">
+                                                        <path class="cls-1" d="M11.45,14.94a7.44,7.44,0,0,1-5.29-2.18l1-1A6.11,6.11,0,0,0,17.55,7.47a6,6,0,0,0-1.79-4.31,6.09,6.09,0,0,0-8.63,0l-1-1a7.47,7.47,0,0,1,10.57,0,7.47,7.47,0,0,1,0,10.57A7.42,7.42,0,0,1,11.45,14.94Z"/><rect class="cls-1" y="6.74" width="11.45" height="1.45"/><polygon class="cls-1" points="11.45 7.47 10.07 3.63 12.78 5.55 15.48 7.47 12.78 9.39 10.07 11.32 11.45 7.47"/></g>
+                                                    </g>
+                                                </svg>
+                                            </div>
+                                        </a>
+                                    </dt>
+                                    <dd class="p-1 text-white">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula sollicitudin laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut justo. Suspendisse potenti.</dd>
+                                    
+                                </dl>
                             </div>
                         </div>
 
@@ -710,13 +726,20 @@
                 }
                 
                 initiateSlider()
+
+                var allPanels = $('.accordion > dd').hide();
+                
+                $('.accordion > dt > a').click(function() {
+                allPanels.slideUp();
+                $(this).parent().next().slideDown();
+                return false;
+                });
             })
         </script>
 
         <style>
             #slider {
    width: 70%;
-   height: 400px;
    margin: auto;
    position: relative;
    font-family: 'Roboto', Arial, Helvetica, sans-serif;
