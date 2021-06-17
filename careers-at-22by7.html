@@ -169,10 +169,10 @@
                     </li>
                 </ul>
                 <!--HERO CONTENT-->
-                <div id="careers" class="hero-bg flex w-full -mt-20 pt-20" style="height: 34rem;">
-                    <div class="w-8/12 flex flex-col items-center justify-center">
+                <div id="careers" class="hero-bg flex w-full -mt-20" style="height: 34rem;">
+                    <div class="w-9/12 flex flex-col items-center justify-center">
                         <div class="w-1/2 flex flex-col">
-                            <blockquote class="hero text-white text-xl md:text-4xl leading-loose">
+                            <blockquote class="hero text-white text-xl md:text-5xl leading-loose">
                                 <span class="block">&#8220;If you fail, never give up</span>
                                 <span class="block">because FAIL means</span>
                                 <span class="block" style="color: #FFFF48;">First Attempt In Learning &#8221;</span>
@@ -218,7 +218,7 @@
                                 </div>
                                 <div class="mr-5" style="width: 2px;background-color: #FFE645;">&nbsp;</div>
                                 <!--CONTENT-->
-                                <div class="flex-1 px-5 text-justify text-base">
+                                <div class="flex-1 px-5 text-justify text-base leading-snug">
                                     We strongly believe that interest is a prerequisite to excellence -
                                     You must love what you do to be truly great at it. That’s why we
                                     give every single team member the freedom to explore as much
@@ -249,7 +249,7 @@
                                 </div>
                                 <div class="mr-2" style="width: 2px;background-color: #FFE645;">&nbsp;</div>
                                 <!--CONTENT-->
-                                <div class="flex-1 mr-10 text-justify text-base">
+                                <div class="flex-1 mr-10 text-justify text-base leading-snug">
                                     <p>
                                         We believe that failure is a better teacher than success. Although
                                     almost every organization urges its employees to strive for success,
@@ -262,7 +262,7 @@
                                     about constructive changes with sincerity.
                                     </p>
 
-                                    <p class="mt-1">
+                                    <p class="mt-3">
                                         You will also find many happy faces and helpful hands cheering you
                                     on as you pick yourself up and dust yourself off. Here, pursuing an
                                     idea with the right intent, effort, and attitude is just as important as the
@@ -292,7 +292,7 @@
                                 </div>
                                 <div class="mr-5" style="width: 2px;background-color: #FFE645;">&nbsp;</div>
                                 <!--CONTENT-->
-                                <div class="flex-1 ml-5 text-justify text-base">
+                                <div class="flex-1 ml-5 text-justify text-base leading-snug">
                                     Every single role in our organization features multiple growth
                                     trajectories. We believe that a company’s growth is compounded by
                                     the growth of its team. At 22by7 Solutions, you have the freedom to
@@ -361,14 +361,42 @@
                         <!--Available Roles-->
                         <div id="roles" class="roles flex flex-col items-center rounded-3xl mt-36 pb-10 mb-10" >
                             <div class="h-52 -mt-24 w-10/12 rounded-3xl">
-                                <div id="slider" class="rounded-3xl border border-yellow-500 overflow-hidden">
+                                <!-- <div id="slider" class="rounded-3xl border border-yellow-500 overflow-hidden">
                                     <div class="slides-container">
                                        <div class="slide"><img src="images/slide1.jpg" alt="Slider img 1" style="height: 200px;width: 100%;" ></div>
                                        <div class="slide"><img src="images/slide2.jpg" alt="Slider img 2" ></div>
                                        <div class="slide"><img src="images/slide3.jpg" alt="Slider img 3" ></div>
                                        <div class="slide"><img src="images/slide4.jpg" alt="Slider img 3" ></div>
                                     </div>
+                                </div> -->
+
+                                <div class="slideshow-container rounded-3xl border border-yellow-500 overflow-hidden" style="width: 80%;height: 200px;">
+
+                                    <div class="mySlides fade">
+                                      <img src="images/slide1.jpg" alt="Slider img 1" class="h-full w-full" >
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <img src="images/slide2.jpg" alt="Slider img 2" class="h-full w-full" >
+                                    </div>
+                                    
+                                    <div class="mySlides fade">
+                                      <img src="images/slide3.jpg" alt="Slider img 3" class="h-full w-full" >
+                                    </div>
+                                    
+                                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                                    
                                 </div>
+                                <br>
+                                    
+                                <div style="text-align:center">
+                                    <span class="dot border border-yellow-600" onclick="currentSlide(1)"></span> 
+                                    <span class="dot border border-yellow-600" onclick="currentSlide(2)"></span> 
+                                    <span class="dot border border-yellow-600" onclick="currentSlide(3)"></span> 
+                                </div>
+
+
                             </div>
                             <!--IMAGE BEADS-->
                             <!-- <div class="flex space-x-1 mt-14">
@@ -380,7 +408,7 @@
                             </div> -->
 
                             <!--Available Roles content-->
-                            <h5 class="mt-5 text-xl font-semibold text-yellow-200">Available Roles</h5>
+                            <h5 class="mt-10 text-xl font-semibold text-yellow-200">Available Roles</h5>
                             <p class="text-xs text-white mt-2">We are currently hiring for the following roles:</p>
 
                             <div class="w-3/4 mt-4">
@@ -869,105 +897,7 @@
 
         <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-throttle-debounce/1.1/jquery.ba-throttle-debounce.min.js" integrity="sha512-JZSo0h5TONFYmyLMqp8k4oPhuo6yNk9mHM+FY50aBjpypfofqtEWsAgRDQm94ImLCzSaHeqNvYuD9382CEn2zw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script>
-            function initiateSlider() {
-                // Start autoplay
-                var auto = true;
-                
-                // Pause duration between slides (ms)
-                var pause = 7000;
-                
-                // Get parent element
-                var $this = $('#slider');
-                
-                // Slides container
-                var slidesCont = $this.children('.slides-container');
-                // Get all slides
-                var slides = slidesCont.children('.slide');
-                
-                // Get pager div
-                var pager = $this.children('.pager');
-                
-                // Get Previous / Next links
-                var arrowsCont = $this.children('.arrows');
-                var prevSlide = arrowsCont.children('.prev');
-                var nextSlide = arrowsCont.children('.next');
-                
-                // Total slides count
-                var slidesCount = slides.length;
-                
-                // Set currentSlide to first child
-                var currentSlide = slides.first();
-                var currentSlideIndex = 1;
-                
-                // Holds setInterval for autoplay, so we can reset it when user navigates
-                var autoPlay = null;
-
-                // Hide all slides except first and add active class to first
-                slides.not(':first').css('display', 'none');
-                currentSlide.addClass('active');
-
-                function fadeNext() {
-                    currentSlide.removeClass('active').fadeOut(700);
-                
-                    if(currentSlideIndex == slidesCount) {
-                        currentSlide = slides.first();
-                        currentSlide.delay(500).addClass('active').fadeIn(700);
-                        currentSlideIndex = 1;
-                    } else {
-                        currentSlideIndex++;
-                        currentSlide = currentSlide.next();
-                        currentSlide.delay(500).addClass('active').fadeIn(700);
-                    }
-                
-                    pager.text(currentSlideIndex+' / '+slidesCount);
-                }
-            
-                // Function responsible for fading to previous slide
-                function fadePrev() {
-                    currentSlide.removeClass('active').fadeOut(700);
-                
-                    if(currentSlideIndex == 1) {
-                        currentSlide = slides.last();
-                        currentSlide.delay(500).addClass('active').fadeIn();
-                        currentSlideIndex = slidesCount;
-                    } else {
-                        currentSlideIndex--;
-                        currentSlide = currentSlide.prev();
-                        currentSlide.delay(500).addClass('active').fadeIn(700);
-                    }
-                
-                    pager.text(currentSlideIndex+' / '+slidesCount);
-                }
-
-                // Function that starts the autoplay and resets it
-                // in case user navigated (clicked prev or next)
-                function AutoPlay() {
-                    clearInterval(autoPlay);
-                
-                    if(auto == true)
-                        autoPlay = setInterval(function() {fadeNext()}, pause);
-                }
-
-                // Detect if user clicked on arrow for next slide and fade next slide if it did
-                $(nextSlide).click(function(e) {
-                    e.preventDefault();
-                    fadeNext();
-                    AutoPlay();
-                });
-                
-                // Detect if user clicked on arrow for previous slide and fade previous slide if it did
-                $(prevSlide).click(function(e) {
-                    e.preventDefault();
-                    fadePrev();
-                    AutoPlay();
-                });
-                
-                // Start autoplay if auto is set to true
-                AutoPlay();
-            }
-
-            
+        <script>            
 
             $(function() {
                 let $body = $('html, body')
@@ -1052,72 +982,22 @@
                     $('.menu_item').eq(index).removeClass('box-text').addClass('pg-menu-active text-white')
                 }
                 
-                initiateSlider()
+                // initiateSlider()
 
                 var allPanels = $('.accordion > dd').hide();
-                
+                var lastClickedAccordion = null
                 $('.accordion > dt > a').click(function() {
                 allPanels.slideUp();
-                $(this).parent().next().slideDown();
+                if (!lastClickedAccordion || lastClickedAccordion !== this) {
+                    $(this).parent().next().slideDown();
+                    lastClickedAccordion = this
+                }
                 return false;
                 });
             })
         </script>
 
         <style>
-            #slider {
-   width: 70%;
-   margin: auto;
-   position: relative;
-   font-family: 'Roboto', Arial, Helvetica, sans-serif;
-   font-size: 15px;
-}
- 
-#slider .slides-container {
-   position: relative;
-   width: 100%;
-   height: 100%;
-}
- 
-#slider .slide {
-   width: 100%;
-   height: 100%;
-   position: absolute;
-   left: 0;
-   top: 0;
-   display: none;
-}
- 
-#slider .slide:first-child {
-   display: block;
-}
-#slider .pager {
-   font-size: 14px;
-   font-weight: 900;
-   color: #777;
-   text-align: center;
-   margin-top: 5px;
-}
- 
-#slider .arrows a {
-   position: absolute;
-   text-decoration: none;
-   color: rgba(255, 255, 255, 0.65);
-   top: 43%;
-   left: 15px;
-   font-weight: 400;
-   line-height: 1;
-   font-size: 42px;
-}
- 
-#slider .arrows a:hover {
-   color: #fff;
-}
- 
-#slider .arrows a.next {
-   left: initial;
-   right: 15px;
-}
 
 .table {
     background-color: white;
@@ -1132,5 +1012,136 @@ td {
     padding: 8px;
 }
         </style>
+
+<style>
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+    
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+    
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 10px;
+      width: 10px;
+      margin: 0 2px;
+      background-color: #eee;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .active, .dot:hover {
+      background-color: #717171;
+    }
+    
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    
+    @-webkit-keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
+    
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    </style>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+
+        setInterval(() => {
+            slideIndex += 1
+            showSlides(slideIndex)
+        }, 3000);
+        </script>
     </body>
 </html>
