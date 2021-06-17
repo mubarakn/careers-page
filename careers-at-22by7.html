@@ -795,19 +795,20 @@
                             <h4 class="text-lg font-semibold mb-1">Apply Now</h4>
                             <div class="relative">
                                 <img class="absolute top-2 left-2 pointer-events-none" width="16" height="16" src="images/name.png" />
-                                <input type="text" placeholder="Name" class="block w-full mt-1 px-2 py-1 pl-8" />
+                                <input type="text" name="your-name" placeholder="Name" class="block w-full mt-1 px-2 py-1 pl-8" />
                             </div>
                             <div class="relative">
                                 <img class="absolute top-3 left-2 pointer-events-none" width="16" height="16" src="images/email.png" />
-                                <input type="text" placeholder="Email" class="block w-full mt-1 px-2 py-1 pl-8" />
+                                <input type="text" name="your-email" placeholder="Email" class="block w-full mt-1 px-2 py-1 pl-8" />
                             </div>
                             <div class="relative">
                                 <img class="absolute top-2 left-2 pointer-events-none" width="16" height="16" src="images/phone.png" />
-                                <input type="text" placeholder="Phone" class="block w-full mt-1 px-2 py-1 pl-8" />
+                                <input type="text" name="tel-686" placeholder="Phone" class="block w-full mt-1 px-2 py-1 pl-8" />
                             </div>
                             <div class="relative">
                                 <img class="absolute top-1 left-2 pointer-events-none" width="16" height="16" src="images/designation.png" />
                                 <select
+                                    name="your-subject"
                                     id="hear"
                                     class="block w-full mt-1 px-2 py-1 pl-6 text-gray-400 text-sm"
                                     >
@@ -820,15 +821,17 @@
                                 </select>
                                 <img src="images/dropdown.png" width="30" class="h-full absolute top-0 right-0 pointer-events-none bg-white" />
                             </div>
-                            <input id="apply_other" type="text" class="block w-full mt-1 px-2 py-1 hidden" placeholder="Please specify." />
+                            <input id="apply_other" name="your-other" type="text" class="block w-full mt-1 px-2 py-1 hidden" placeholder="Please specify." />
 
                             <div class="mt-2">
                                 <span class="text-xs block pb-1">Upload Resume</span>
-                                <button class="block text-xs bg-white border border-black px-2 py-1">Choose file</button>
+                                <input id="file-229" name="file-229" type="file" class="text-xs w-full" />
+                                <!-- <label for="file-229" class="block text-xs bg-white border border-black px-2 py-1">Choose file</label> -->
                             </div>
                             <div class="mt-2">
                                 <span class="text-xs pb-1 block">Cover Letter (Optional)</span>
-                                <button class="block text-xs bg-white border border-black px-2 py-1">Choose file</button>
+                                <input id="file-230" name="file-230" type="file" class="text-xs w-full" />
+                                <!-- <label for="file-230" class="block text-xs bg-white border border-black px-2 py-1">Choose file</label> -->
                             </div>
 
                             <button class="mt-4 rounded-xl bg-red-500 hover:bg-red-600 text-white font-semibold uppercase w-full px-4 py-2">Submit</button>
